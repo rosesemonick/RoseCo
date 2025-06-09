@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Semonick - Digital Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .header-bg {
+            background-color: #1a202c; /* Dark charcoal */
+            color: #e2e8f0; /* Light gray for text */
+            padding: 2rem 0;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .project-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .section-title {
+            color: #2c5282; /* Darker blue */
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #63b3ed; /* Light blue underline */
+            padding-bottom: 0.5rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            background-color: #4299e1; /* Blue */
+            color: white;
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #3182ce; /* Darker blue on hover */
+        }
+        .list-item-title {
+            color: #2c5282;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="header-bg shadow-lg">
+        <div class="container text-center">
+            <h1 class="text-5xl font-bold mb-2">Rose Semonick</h1>
+            <p class="text-xl text-blue-200">Information Technology Student | Aspiring IT Professional</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#about" class="btn">About Me</a>
+                <a href="#education" class="btn">Education</a>
+                <a href="#experience" class="btn">Experience</a>
+                <a href="#skills" class="btn">Skills</a>
+                <a href="#projects" class="btn">Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container py-12">
+        <div class="card">
+            <h2 class="section-title text-4xl">About Me</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                I am a resourceful and motivated Information Technology student at the University of Central Florida (UCF), driven by a passion for leveraging technology to solve problems and contribute to meaningful initiatives. With hands-on experience in customer service, troubleshooting, and front-end development, I am eager to apply my technical knowledge and collaborative skills in a mission-driven environment. My background includes a SolidWorks certification from my previous studies in aerospace engineering, which honed my problem-solving and technical analysis abilities. Since transitioning to IT in Spring 2024, I've gained a CPST IT certification, deepening my expertise in coding, simulations, and system troubleshooting. I am particularly drawn to organizations that prioritize inclusive storytelling and community engagement, aligning with my professional and personal values.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container py-12 bg-blue-50 rounded-lg shadow-inner">
+        <div class="card">
+            <h2 class="section-title text-4xl">Education</h2>
+            <div class="mb-6">
+                <h3 class="list-item-title text-2xl">University of Central Florida (UCF)</h3>
+                <p class="text-gray-600 text-lg">Orlando, FL | B.S., Information Technology (expected December 2025)</p>
+                <p class="text-gray-600 text-lg">GPA: 3.1</p>
+                <p class="text-gray-700 mt-2">Relevant coursework: CIS 3921, CDA 3103, CGS 3269, Computer Science 1, Object-Oriented Programming</p>
+                <p class="text-gray-700">Career Focus: System Administration & IT Project Management</p>
+                <p class="text-gray-700">Certifications: CPST IT Certification, SolidWorks Certification</p>
+            </div>
+            <!-- High School information removed as requested -->
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="container py-12">
+        <div class="card">
+            <h2 class="section-title text-4xl">Work Experience</h2>
+            <div class="mb-6">
+                <h3 class="list-item-title text-2xl">Personal Shopper - Instacart</h3>
+                <p class="text-gray-600 text-lg">January 2022 – Present</p>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                    <li>Increased customer satisfaction by providing timely and efficient grocery shopping services.</li>
+                    <li>Complied with quality standards and ensured accurate product selection and delivery.</li>
+                    <li>Communicated effectively with customers and handled substitutions professionally.</li>
+                </ul>
+            </div>
+            <div class="mb-6">
+                <h3 class="list-item-title text-2xl">Customer Service Representative / Front-End Coordinator - Publix</h3>
+                <p class="text-gray-600 text-lg">Bradenton, FL | January 2017 – November 2021</p>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                    <li>Handled cash register operations, processed lottery and money orders, and resolved customer issues.</li>
+                    <li>Opened and closed the front of store; managed phone inquiries and day-to-day service desk functions.</li>
+                    <li>Trained new team members on store procedures and customer service standards.</li>
+                    <li>Coordinated front-end operations to ensure team coverage and efficient service.</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="list-item-title text-2xl">Volunteer Experience</h3>
+                <div class="ml-4 mt-2">
+                    <h4 class="font-semibold text-xl text-gray-700">HOPEs Closet</h4>
+                    <p class="text-gray-600 text-lg">October 2022 – November 2022</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-1 space-y-1">
+                        <li>Sorted through items, organized, and engaged in team collaboration.</li>
+                    </ul>
+                </div>
+                <div class="ml-4 mt-4">
+                    <h4 class="font-semibold text-xl text-gray-700">Palmetto Library</h4>
+                    <p class="text-gray-600 text-lg">October 2018 – May 2019</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-1 space-y-1">
+                        <li>Assisted with shelving, community events, and front desk tasks.</li>
+                        <li>Engaged with diverse patrons and helped maintain an inclusive space.</li>
+                        <li>Supported public programming and educational outreach in a community setting.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container py-12 bg-blue-50 rounded-lg shadow-inner">
+        <div class="card">
+            <h2 class="section-title text-4xl">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-lg">
+                <div>
+                    <h3 class="list-item-title text-2xl mb-2">Languages & Tools:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>HTML (Front-end)</li>
+                        <li>MARIE Assembly</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="list-item-title text-2xl mb-2">Platforms:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Cisco Packet Tracer</li>
+                        <li>Virtual Machines</li>
+                        <li>macOS</li>
+                        <li>Windows</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="list-item-title text-2xl mb-2">Software:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Microsoft Office (Excel, Word, Access, PowerPoint, Outlook)</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="list-item-title text-2xl mb-2">Systems & Tasks:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>EDR Diagrams</li>
+                        <li>Troubleshooting</li>
+                        <li>Coding Simulations</li>
+                        <li>Basic Networking</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="list-item-title text-2xl mb-2">Soft Skills:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Team Collaboration</li>
+                        <li>Initiative</li>
+                        <li>Customer Service</li>
+                        <li>Communication</li>
+                        <li>Diversity-Aware Support</li>
+                        <li>Multitasking</li>
+                        <li>Interpersonal Skills</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container py-12">
+        <div class="card">
+            <h2 class="section-title text-4xl">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1: Mousetrap Car -->
+                <div class="project-card">
+                    <h3 class="list-item-title text-2xl mb-2">Mousetrap Car</h3>
+                    <p class="text-gray-700">
+                        Designed and built a mousetrap car for a distance and speed challenge, demonstrating practical application of mechanical principles.
+                    </p>
+                </div>
+                <!-- Project 2: Rube Goldberg Machine -->
+                <div class="project-card">
+                    <h3 class="list-item-title text-2xl mb-2">Rube Goldberg Machine</h3>
+                    <p class="text-gray-700">
+                        Constructed a Rube Goldberg machine, showcasing an understanding of sequential mechanical process flow and creative problem-solving.
+                    </p>
+                </div>
+                <!-- Project 3: Battery-Powered Foam Boat -->
+                <div class="project-card">
+                    <h3 class="list-item-title text-2xl mb-2">Battery-Powered Foam Boat</h3>
+                    <p class="text-gray-700">
+                        Engineered a battery-powered foam boat capable of transporting an object across checkpoints, highlighting design and engineering skills.
+                    </p>
+                </div>
+                <!-- Project 4: Robotic Car Navigation -->
+                <div class="project-card">
+                    <h3 class="list-item-title text-2xl mb-2">Robotic Car Navigation</h3>
+                    <p class="text-gray-700">
+                        Programmed a robotic car to navigate a maze, demonstrating proficiency in programming and autonomous system control.
+                    </p>
+                </div>
+                <!-- Project 5: Basic Website Front-End -->
+                <div class="project-card">
+                    <h3 class="list-item-title text-2xl mb-2">Basic Website Front-End Development</h3>
+                    <p class="text-gray-700">
+                        Developed the front-end of a basic website using HTML and design principles, showcasing foundational web development skills.
+                    </p>
+                </div>
+                <!-- Project 6: Screens and Sleep Research -->
+                <div class="project-card">
+                    <h3 class="list-item-title text-2xl mb-2">Screens and Sleep: Exploring the Connection Between Nighttime Screen Use and Sleep Quality in College Students (Research Project)</h3>
+                    <p class="text-gray-700">
+                        Authored a research project investigating the correlation between nighttime screen use and sleep quality among college students. This involved analyzing peer-reviewed articles, developing survey methods, and outlining a mixed-method research approach.
+                    </p>
+                </div>
+                <!-- Project 7: How to Highlight Hair at Home (Instructional Guide) -->
+                <div class="project-card">
+                    <h3 class="list-item-title text-2xl mb-2">How to: Highlight Your Hair at Home (Instructional Guide)</h3>
+                    <p class="text-gray-700">
+                        Created a detailed instructional guide on highlighting hair at home, outlining materials, precautions, and step-by-step techniques, demonstrating ability to clearly document complex processes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-12 bg-blue-50 rounded-lg shadow-inner text-center">
+        <div class="card">
+            <h2 class="section-title text-4xl">Contact</h2>
+            <p class="text-lg text-gray-700 mb-4">Feel free to reach out if you have any questions or opportunities!</p>
+            <p class="text-xl text-gray-800 font-semibold">(941) 524-4188</p>
+            <p class="text-xl text-gray-800 font-semibold">ro043452@ucf.edu</p>
+            <p class="text-lg text-gray-600 mt-2">Orlando, FL 32826</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="header-bg mt-12 py-6 text-center text-blue-200">
+        <div class="container">
+            <p>&copy; 2025 Rose Semonick. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
