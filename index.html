@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rose Semonick - Digital Portfolio</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -39,6 +39,7 @@
             padding: 1.5rem;
             margin-bottom: 1.5rem;
             transition: transform 0.2s ease-in-out;
+            cursor: pointer; /* Indicate it's clickable */
         }
         .project-card:hover {
             transform: translateY(-5px);
@@ -70,7 +71,6 @@
     </style>
 </head>
 <body class="antialiased">
-    <!-- Header Section -->
     <header class="header-bg shadow-lg">
         <div class="container text-center">
             <h1 class="text-5xl font-bold mb-2">Rose Semonick</h1>
@@ -85,7 +85,6 @@
         </div>
     </header>
 
-    <!-- About Me Section -->
     <section id="about" class="container py-12">
         <div class="card">
             <h2 class="section-title text-4xl">About Me</h2>
@@ -95,7 +94,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education" class="container py-12 bg-blue-50 rounded-lg shadow-inner">
         <div class="card">
             <h2 class="section-title text-4xl">Education</h2>
@@ -107,11 +105,19 @@
                 <p class="text-gray-700">Career Focus: System Administration & IT Project Management</p>
                 <p class="text-gray-700">Certifications: CPST IT Certification, SolidWorks Certification</p>
             </div>
-            <!-- High School information removed as requested -->
+            <div class="mb-6">
+                <h3 class="list-item-title text-2xl">Manatee High school</h3>
+                <p class="text-gray-600 text-lg">Bradenton, FL | 08/2017-05/2021</p>
+                <p class="text-gray-600 text-lg">GPA: 3.6</p>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                    <li>AP plus program 08/2017-05/2021 and dual enrollment 08/2019-05/2021 (through USF/SCF)</li>
+                    <li>Top 10% of my class</li>
+                    <li>Relevant coursework: Engineering 1 and 2</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- Work Experience Section -->
     <section id="experience" class="container py-12">
         <div class="card">
             <h2 class="section-title text-4xl">Work Experience</h2>
@@ -156,7 +162,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="container py-12 bg-blue-50 rounded-lg shadow-inner">
         <div class="card">
             <h2 class="section-title text-4xl">Skills</h2>
@@ -213,65 +218,73 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="container py-12">
         <div class="card">
             <h2 class="section-title text-4xl">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Project 1: Mousetrap Car -->
+
+                <a href="screens-and-sleep-research.html" class="project-card block">
+                    <h3 class="list-item-title text-2xl mb-2">Screens and Sleep: Exploring the Connection Between Nighttime Screen Use and Sleep Quality in College Students (Research Proposal)</h3>
+                    <p class="text-gray-700">
+                        This research proposal outlines a study aimed at investigating the correlation between nighttime screen use and sleep quality among UCF undergraduate students. It details the project's objectives, background, methodology, and expected outcomes, emphasizing the significance of this research for student well-being.
+                    </p>
+                </a>
+
+                <a href="how-to-highlight-hair.html" class="project-card block">
+                    <h3 class="list-item-title text-2xl mb-2">How to: Highlight Your Hair at Home (Instructional Guide)</h3>
+                    <p class="text-gray-700">
+                        This project focuses on providing clear, step-by-step instructions for a specific task. The goal is to make a complex process accessible and easy to follow for a general audience, incorporating necessary warnings, tools, and visual aids.
+                    </p>
+                </a>
+
+                <a href="resume.html" class="project-card block">
+                    <h3 class="list-item-title text-2xl mb-2">My Resume</h3>
+                    <p class="text-gray-700">
+                        This is my current resume, outlining my educational background, professional experience, and technical and soft skills. It highlights my journey in Information Technology and customer service.
+                    </p>
+                </a>
+
+                <a href="cover-letter.html" class="project-card block">
+                    <h3 class="list-item-title text-2xl mb-2">My Cover Letter (IT Intern Position)</h3>
+                    <p class="text-gray-700">
+                        This is my cover letter submitted for the IT Intern position at WUCF. It highlights my qualifications, experience, and enthusiasm for contributing to a mission-driven organization.
+                    </p>
+                </a>
+
                 <div class="project-card">
                     <h3 class="list-item-title text-2xl mb-2">Mousetrap Car</h3>
                     <p class="text-gray-700">
                         Designed and built a mousetrap car for a distance and speed challenge, demonstrating practical application of mechanical principles.
                     </p>
                 </div>
-                <!-- Project 2: Rube Goldberg Machine -->
                 <div class="project-card">
                     <h3 class="list-item-title text-2xl mb-2">Rube Goldberg Machine</h3>
                     <p class="text-gray-700">
                         Constructed a Rube Goldberg machine, showcasing an understanding of sequential mechanical process flow and creative problem-solving.
                     </p>
                 </div>
-                <!-- Project 3: Battery-Powered Foam Boat -->
                 <div class="project-card">
                     <h3 class="list-item-title text-2xl mb-2">Battery-Powered Foam Boat</h3>
                     <p class="text-gray-700">
                         Engineered a battery-powered foam boat capable of transporting an object across checkpoints, highlighting design and engineering skills.
                     </p>
                 </div>
-                <!-- Project 4: Robotic Car Navigation -->
                 <div class="project-card">
                     <h3 class="list-item-title text-2xl mb-2">Robotic Car Navigation</h3>
                     <p class="text-gray-700">
                         Programmed a robotic car to navigate a maze, demonstrating proficiency in programming and autonomous system control.
                     </p>
                 </div>
-                <!-- Project 5: Basic Website Front-End -->
                 <div class="project-card">
                     <h3 class="list-item-title text-2xl mb-2">Basic Website Front-End Development</h3>
                     <p class="text-gray-700">
                         Developed the front-end of a basic website using HTML and design principles, showcasing foundational web development skills.
                     </p>
                 </div>
-                <!-- Project 6: Screens and Sleep Research -->
-                <div class="project-card">
-                    <h3 class="list-item-title text-2xl mb-2">Screens and Sleep: Exploring the Connection Between Nighttime Screen Use and Sleep Quality in College Students (Research Project)</h3>
-                    <p class="text-gray-700">
-                        Authored a research project investigating the correlation between nighttime screen use and sleep quality among college students. This involved analyzing peer-reviewed articles, developing survey methods, and outlining a mixed-method research approach.
-                    </p>
-                </div>
-                <!-- Project 7: How to Highlight Hair at Home (Instructional Guide) -->
-                <div class="project-card">
-                    <h3 class="list-item-title text-2xl mb-2">How to: Highlight Your Hair at Home (Instructional Guide)</h3>
-                    <p class="text-gray-700">
-                        Created a detailed instructional guide on highlighting hair at home, outlining materials, precautions, and step-by-step techniques, demonstrating ability to clearly document complex processes.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="container py-12 bg-blue-50 rounded-lg shadow-inner text-center">
         <div class="card">
             <h2 class="section-title text-4xl">Contact</h2>
@@ -282,11 +295,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="header-bg mt-12 py-6 text-center text-blue-200">
         <div class="container">
             <p>&copy; 2025 Rose Semonick. All rights reserved.</p>
         </div>
     </footer>
 </body>
-</html> 
+</html>
